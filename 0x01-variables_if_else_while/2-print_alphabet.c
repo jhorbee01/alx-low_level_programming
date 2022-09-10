@@ -1,31 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - Print alphabet
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
-
 {
+	char love;
 
-		char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-
-			int i;
-
-
-
-				for (i = 0; i < 26; i++)
-
-						{
-
-									putchar(alp[i]);
-
-										}
-
-					putchar('\n');
-
-						return (0);
-
+	for (love = 'a'; love <= 'z'; love++)
+		putchar(love);
+	putchar('\n');
+	return (0);
 }
