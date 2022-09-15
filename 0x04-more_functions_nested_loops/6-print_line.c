@@ -1,31 +1,16 @@
 #include "main.h"
-
-
-
 /**
+ * print_line - prints a line
  *
- * * print_line - print horizontal line
- *
- * * @n: int length of line
- *
- * */
-
-
-
+ * @n: number of times the character _ should be printed
+ */
 void print_line(int n)
-
 {
+	int i;
 
-		while (n > 0)
-
-				{
-
-							_putchar('_');
-
-									n--;
-
-										}
-
-			_putchar(10);
-
+	for (i = 0; i < n; i++)
+	{
+		_putchar('_');
+	}
+	_putchar('\n');
 }
