@@ -1,39 +1,18 @@
 #include "main.h"
-
 /**
+ * print_most_numbers - prints numbers from 0 to 9 with a new line
  *
- *  * print_most_numbers - print digits
- *
- *   * Return: void
- *
- *   */
-
-
-
+ */
 void print_most_numbers(void)
-
 {
+	int i;
 
-		int a = 48, i;
-
-
-
-			for (i = 0; i <= 9; i++)
-
-					{
-
-								if ((i == 2) || (i == 4))
-
-												continue;
-
-										a = a + i;
-
-												_putchar(a);
-
-														a = 48;
-
-															}
-
-				_putchar(10);
-
+	for (i = '0'; i <= '9'; i++)
+	{
+		if (i != '2' &&  i != '4')
+		{
+			_putchar(i);
+		}
+	}
+	_putchar('\n');
 }
