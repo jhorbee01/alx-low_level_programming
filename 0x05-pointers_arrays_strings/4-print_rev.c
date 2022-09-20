@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
  * rev_string - print string in rev direction
  * @s: string
